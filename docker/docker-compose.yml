@@ -354,7 +354,7 @@ services:
     #     target: /opt/app/rel/logflare/bin/gcloud.json
     #     read_only: true
     healthcheck:
-      test: ["NONE"]
+      test: ["CMD", "true"]
       timeout: 5s
       interval: 5s
       retries: 10
